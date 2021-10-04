@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControllerPaginaInicial">
+   <children>
+      <Pane prefHeight="268.0" prefWidth="445.0">
+         <children>
+            <Button fx:id="btExecutar" layoutX="33.0" layoutY="39.0" mnemonicParsing="false" onAction="#onBtExecutar" prefHeight="33.0" prefWidth="381.0" text="EXECUTRAR" />
+            <Button fx:id="btConsultar" layoutX="33.0" layoutY="85.0" mnemonicParsing="false" onAction="#onBtConsultar" prefHeight="33.0" prefWidth="381.0" text="CONSULTAR" />
+            <Button fx:id="btConferenciaTitulos" layoutX="33.0" layoutY="129.0" mnemonicParsing="false" onAction="#onBtConferenciaTitulos" prefHeight="33.0" prefWidth="381.0" text="CONFERÊNCIA DE TITULOS" />
+            <Button fx:id="btAltSenha" layoutX="33.0" layoutY="197.0" mnemonicParsing="false" onAction="#onBtAltSenha" prefHeight="33.0" prefWidth="107.0" text="ALTERAR SENHA" />
+            <Button fx:id="btLogout" layoutX="155.0" layoutY="197.0" mnemonicParsing="false" onAction="#onBtLogout" prefHeight="33.0" prefWidth="92.0" text="LOGOUT" />
+            <ImageView fitHeight="63.0" fitWidth="124.0" layoutX="307.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/WhatsApp%20Image%202021-05-26%20at%2020.57.36.jpeg" />
+               </image>
+            </ImageView>
+            
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

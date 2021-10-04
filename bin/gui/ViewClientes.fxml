@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- no Root Element ao criar essa clase usamos o VBox -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="268.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControllerClientes">
+   <children>
+      <Label text="Clientes">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+            <ImageView fitHeight="24.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/WhatsApp%20Image%202021-05-26%20at%2020.57.36.jpeg" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
+            <Button mnemonicParsing="false" opacity="0.0" text="Button" />
+            <Button fx:id="btVoltar" mnemonicParsing="false" onAction="#onBtVoltar" text="Voltar" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewCliente" prefHeight="412.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="54.0" text="Id" />
+          <TableColumn fx:id="tableColumnName" prefWidth="172.0" text="Nome" />
+            <TableColumn fx:id="tableColumnDocumento" prefWidth="91.0" text="Documento" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="58.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="69.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

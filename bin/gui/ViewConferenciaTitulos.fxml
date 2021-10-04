@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewControllerRelatoriosTitulos">
+   <children>
+      <Pane prefHeight="268.0" prefWidth="445.0">
+         <children>
+            <Button fx:id="btTitulosAberto" layoutX="33.0" layoutY="39.0" mnemonicParsing="false" onAction="#onBtTitulosAbertos" prefHeight="33.0" prefWidth="381.0" text="TITULOS EM ABERTO" textFill="#00b100">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btTitulosLiquidados" layoutX="33.0" layoutY="85.0" mnemonicParsing="false" onAction="#onBtTitulosLiquidados" prefHeight="33.0" prefWidth="381.0" text="TITULOS LIQUIDADOS" textFill="#2800ff">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btTitulosVencidos" layoutX="33.0" layoutY="129.0" mnemonicParsing="false" onAction="#onBtTitulosVencidos" prefHeight="33.0" prefWidth="381.0" text="TITULOS VENCIDOS" textFill="RED">
+            	<font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btVoltar" layoutX="178.0" layoutY="196.0" mnemonicParsing="false" onAction="#onBtVoltar" prefHeight="33.0" prefWidth="92.0" text="VOLTAR" />
+            <ImageView fitHeight="63.0" fitWidth="124.0" layoutX="307.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/WhatsApp%20Image%202021-05-26%20at%2020.57.36.jpeg" />
+               </image>
+            </ImageView>
+            
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
